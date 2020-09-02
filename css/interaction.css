@@ -1,0 +1,426 @@
+
+/* ================================= 
+  Button Transitions
+==================================== */
+
+.button {
+	transition: background .3s;
+}
+.button:hover {
+	background: rgba(74,137,202, 1);
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.photo-container {
+	text-align: center;
+	margin-bottom: 2.5em;
+}
+.photo-container img {
+ 	max-width: 100%;
+ 	position: relative;
+	z-index: 100;
+}
+.button {
+	color: #fff;
+	width: 75%;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 20px 0;
+	border-radius: .5em;
+	background: rgba(74,137,202, .8);
+	margin: .3em 0 0;
+}
+.photo {
+	position: relative;
+	/*line-height: 0;*/
+}
+/* ---- Photo Overlay ---- */
+
+.photo-desc {
+	color: #fff;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0;
+	padding-left: 10px;
+	padding-right: 1		0px;
+	display: flex; /* For centering text inside .photo-overlay */
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #44619D;
+}
+.photo-desc p{
+	line-height: 1;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+/* ================================= 
+  Photo 3D Transforms & Transitions
+==================================== */
+
+.cube-container {
+	box-shadow: 0 18px 40px 5px rgba(0,0,0,.4);
+  	perspective: 800px;
+}
+.cube-container {
+	max-width: 200px;
+	text-align: center;
+	margin: 0 auto 4.5em;
+}
+.photo-cube{
+  transition: transform 2s ease-in-out;
+  width: 230px;
+  height: 200px;
+ transform-style: preserve-3d; 
+}
+.photo-cube:hover{
+  transform:rotateY(-270deg);
+}
+.front,
+.back,
+.left,
+.right{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  
+}
+.front{
+  transform: translate3d(0, 0, 110px);
+}  
+.back{
+ transform: translateZ(-110px) rotateY(270deg);
+  transform-origin: center left;
+}
+.left{
+  transform: rotateY(-270deg) translate3d(110px, 0, 0);
+  transform-origin: top right;
+}
+.right{
+  transform: translateZ(-110px) rotateY(180deg);
+}
+/* ---- Photo Overlay ---- */
+
+.photo-describe {
+	font-size: .85em;
+	color: #fff;
+	padding: 1.1em 1em 0;
+	background: #345d88;
+}
+
+#ani-btn {
+	font-size: .8em;
+	color: #fff;
+	width: 90%;
+	line-height: 1.15;
+	font-weight: 700;
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: .95em 0;
+	border-radius: .5em;
+	background: rgba(74,137,202, .8);
+	margin: auto;
+}
+
+/* ---- Animation text ---- */
+
+/* .dynamic-text{
+  font-weight: bold;
+  color: #000;
+  word-break: break-word;
+} */
+.dynamic-text:after{
+  /*content: '.';*/
+  font-weight: bold;
+  position: relative;
+  /*opacity: 0.5;*/
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#home-text {
+	font-family: 'Allura', cursive;
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  word-break: break-word;
+}
+
+
+.animated.flipOutX,
+.animated.flipOutY,
+.animated.bounceIn,
+.animated.bounceOut {
+  animation-duration: .75s;
+}
+
+.link-1 {	
+  transition: 0.3s ease;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border-top: px solid #3fa46a;
+  border-bottom: px solid #3fa46a;
+  padding: 20px 0;
+}
+.link-1:hover {
+  border-top: 4px solid #ff0000;
+  border-bottom: 4px solid #ff0000;
+  padding: 6px 0; 
+}
+.name{
+	color: #fff;
+}
+.name ul li:nth-child(1) h1{
+	/*font-weight: 300;*/
+	transform: scale(1.2);
+}
+.name ul li:nth-child(10) h1{
+	/*font-weight: 300;*/
+	transform: scale(1.2);
+}
+
+
+
+/* Animation */
+.anim-typewriter{
+	animation: typewriter 5s steps(44) 1s 1 normal both, 
+	blinkTextCursor 500ms steps(30) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 16em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: transparent;}
+  to{border-right-color: none;}
+}
+
+/* Hover Animnation Introduction */
+.threeD{
+	width: 100%;	
+	height: 200px;
+}
+.threeD ul{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.threeD ul li{
+  list-style: none;
+	margin: 0 40px;
+
+}
+ .space{
+	margin-left: 20px;
+
+}
+.threeD ul li a{
+	font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  line-height: 80px;
+  transition: .7s;
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  background: #fff;
+  transform: perspective(100px) rotate(4deg) skew(15deg) translate(0,0);
+  transition: .7s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+
+.threeD ul li a:before
+{
+	content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #7b7f81;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.threeD ul li a:after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #5e5555;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.threeD ul li a:hover{
+	transform: perspective(1000px) rotate(4deg) skew(25deg) translate(20px,-20px);
+	box-shadow: -50px 50px 50px #fff;
+}
+
+
+/* Skill Hover Effect Area  */
+#skillHoverWrapper{
+	background-color: rgb(37, 156, 172);
+}
+.skillHoverEffect{
+	display: flex;
+	flex-wrap: wrap;
+	height: 400px;
+
+}
+
+.skillHoverEffect  li{
+  list-style: none;
+  margin: 0 60px;
+
+}
+.skillHoverEffect li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: #000;
+  line-height: 80px;
+  transition: .7s;
+  position: absolute;
+  display: block;
+  width: 80px;
+	height: 80px;
+  text-align: center;
+  background: #fff;
+  transform: perspective(100px) rotate(-40deg) skew(15deg) translate(0,0);
+  transition: .7s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+
+.skillHoverEffect li a:before{
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.skillHoverEffect li a:after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #b1b1b1;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.skillHoverEffect li a:hover{
+   transform: perspective(1000px) rotate(-40deg) skew(25deg) translate(20px,-20px);
+    box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+}
+.framework h2, h4{
+	text-align: center;
+}
+
+
+
+
+/* flyaway Animation */
+
+/* Hover Links Resume */
+/* Hover Animnation Introduction */
+#hoverIconWrapper{
+	background-color: #fff;
+}
+.hoverIconDiv{
+	width: 100%;	
+	height: 150px;
+}
+.hoverIconDiv ul{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+.hoverIconDiv ul li{
+  list-style: none;
+	margin: 50px 80px 0px 40px;
+
+}
+ .space{
+	margin-left: 20px;
+
+}
+.hoverIconDiv ul li a{
+	font-family: 'Orbitron', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  line-height: 80px;
+  transition: .7s;
+  position: absolute;
+  display: block;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  background: rgb(219, 214, 214);
+  transform: perspective(100px) rotate(-44deg) skew(15deg) translate(0,0);
+  transition: .7s;
+  box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+}
+
+.hoverIconDiv ul li a:before
+{
+	content: '';
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #7b7f81;
+  transition: .5s;
+  transform: rotate(0deg) skewY(-45deg);
+}
+.hoverIconDiv ul li a:after{
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: -10px;
+  height: 20px;
+  width: 100%;
+  background: #5e5555;
+  transition: .5s;
+  transform: rotate(0deg) skewX(-45deg);
+}
+.hoverIconDiv ul li a:hover{
+	transform: perspective(1000px) rotate(-44deg) skew(25deg) translate(20px,-20px);
+	box-shadow: -50px 50px 50px #fff;
+}
+

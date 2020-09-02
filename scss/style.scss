@@ -1,0 +1,185 @@
+*{
+  text-decoration: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Cabin", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(../images/code1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h2 {
+  letter-spacing: 6px;
+  font-weight: bold;
+}
+h3 {
+  letter-spacing: 6px;
+}
+h1 {
+  letter-spacing: 12px;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #003366;
+}
+.div-project p{
+  font-size: 1.2em;
+}
+.navbar-default{
+         background: linear-gradient(90deg, #29333d, #55b3d0, #29333d),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+}
+.edu-div{
+  /*font-weight: bold;*/
+  font-size: 18px;
+}
+#head-div{
+   opacity: 0.9;
+     background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+}
+
+#aboutme{
+   opacity: 0.9;
+      background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+
+}
+#education{
+   opacity: 0.9;
+    background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+}
+#animation-div{
+   opacity: 0.9;
+  margin-top: 30px;
+    background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+
+}
+#project{
+   
+    background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+              opacity: 0.9;
+
+}
+#information{
+   opacity: 0.9;
+   background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+
+}
+#form-div{
+   opacity: 0.9;
+   background: linear-gradient(90deg, #d4eece, #55b3d0, #fff),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+
+}
+#footer-div{
+   opacity: 0.9;
+       background: linear-gradient(90deg, #29333d, #55b3d0, #29333d),
+              no-repeat;
+              background-blend-mode: multiply;    
+              background-size: cover;
+    height: 150px;
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+}
+#head-margin{
+  margin: 80px 0 40px;
+}
+#front-end{
+  font-family: 'Allura', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+}
+#profile-detail{
+  margin-top: 100px;
+}
+#logo{
+  width: 45px;
+}
+#mypic{
+  border-radius: 100%;
+  width: 160px;
+  border: 1px solid #fff;
+  margin: 0 auto;
+  transform: none;
+
+}
+.front-end-content{
+  font-size: 20px;
+}
+#edu-wrapper{
+  margin: 30px 0;
+}
+#mydetail{
+  padding-right: 20px;
+}
+#project-image{
+  width: 300px;
+  height: 200px;
+  position: relative;
+  z-index: 100;
+} 
+#info-section{
+  margin-top: 30px;
+}
+#myNavbar ul li a{
+  color:  #402633;
+}
+#myNavbar ul li a:hover{
+  color: #fff;
+}
+
+
+.thumbnail{
+  padding: 25px;
+   background-color: transparent;
+
+}
+.photo-container img {
+  max-width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+.information-thumbnail{
+  height: 130px; 
+}
+.list-group-item{
+ background-color: transparent; 
+}
+.resume{
+  margin-right: 5px;
+}
+.btn-info{
+  margin-top: 7px;
+  margin-left: 10px;
+}
