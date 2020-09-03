@@ -151,7 +151,7 @@ sup {
 }
 
 a {
-  color: #bd5d38;
+  color: #3d3d3d;
   text-decoration: none;
   background-color: transparent;
 }
@@ -6123,7 +6123,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #34495e !important;
+  background-color: #1e272e !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
@@ -8924,8 +8924,8 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #34495e !important;
-}
+  color: #3d3d3d !important;
+} 
 
 a.text-primary:hover, a.text-primary:focus {
   color: #824027 !important;
@@ -9159,7 +9159,7 @@ p.lead {
   #sideNav .navbar-brand .img-profile {
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: 0.5rem solid #3d3d3d;
   }
   #sideNav .navbar-collapse {
     display: flex;
